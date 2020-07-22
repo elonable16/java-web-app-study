@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon first test</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        h2{
+            color: yellow;
+            text-align: center;
+        }
+    </style>
+    <script> /* 자바스크립트*/
+        alert("나의 첫번째 복습 파일");
+
+        function show(){
+            document.getElementById("fig").src = "img/img01.jpeg";
+        }
+        function hide(){
+            document.getElementById("fig").src = "";
+        }
+    </script>
+</head>
+
+<body>
+    <hr style="height: 3px; border : 0px; background-color: white;">
+    <h2 onmouseover ="show()" onmouseout="hide()" >UI 기본 내용</h2>
+    <img id="fig" src="">  <!--이미지의 위치를 넘겨주는 부분-->
+    <hr style="height: 3px; border : none; background-color: white;">
+    <h4><strong> 문단 나누기와 글자/이미지 작성법.....</strong></h4>
+    <pre><i>PRE를 이요해서 설명을 작성하자 
+    마우스를 글씨에 올리면<del>사진이</del>로 나올꺼야
+        이 문장에서는 tab을 친 곳도 그대로 인식되는 걸 조심해야 한다...
+    </i></pre>
+    <div style="background-color: white; color: black; width: 48%; height: 300px; float: left; padding: 10px;">
+        정보처리기사를 따는 방법 <br>
+        <ol type="1" start="1">
+            <li> 매일 조금씩 공부를 한다</li>
+            <li><i>시험을</i>치룬다</li>
+            <li><b>합격</b>한다.</li>
+        </ol>
+        <span> span을 하게 되면 문장이 끊어지지 않는다</span>
+        <span> 이게 바로 &lt;span&gt;을 쓰는 이유!!</span>
+        <span> &lt;span&gt;은 div, p랑 조금 달라</span>
+        <P>P는 div랑 쓰임이 비슷하지만 문단의 거리가 달라</P>
+        <p>이 밑에 있는 것과 비교를 하면 알수 있다</p>
+        이 문장은 div태그 안에 들어 있는 문장이다 <br>
+        문단 영역을 만들고 바로 문자를 넣을 수 있지
+    </div>
+    <div style="background-color: gray; color: black; width: 48%; height: 300px; float: right; padding: 10px;">
+        <a href="http://www.naver.com" alt = naver 링크><img src ="img/img01.jpeg" width="100px" alt="사진"></a>
+        <a href="http://www.naver.com"> 네이버 하이퍼링크</a>
+    </div>
+</body>
+</html>
